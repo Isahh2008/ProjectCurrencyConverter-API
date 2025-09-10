@@ -22,9 +22,8 @@ Com a globalização e o aumento das transações internacionais, torna-se neces
 - Oferecer uma interface simples e intuitiva para o usuário.
 # Ferramentas utilizada
 * Linguagem de programação: JavaScript.
-
 * API utilizada: ExchangeRate-API.
-
+* Retrofit
 * Ambiente de desenvolvimento: Android Studio
 # Metodologia
 
