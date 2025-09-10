@@ -42,6 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Converter"/>
+
+    <!--componente que recebera a aconversão ao usuario -->
     <TextView
         android:id="@+id/tvResultado"
         android:layout_width="match_parent"

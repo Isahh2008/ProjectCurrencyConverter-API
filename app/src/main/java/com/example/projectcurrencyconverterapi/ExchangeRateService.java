@@ -10,7 +10,7 @@ public interface ExchangeRateService {
      * *Método para obter taxas de cambio recentes
      */
 
-    @GET("/vó/{apikey}/latest/{baseCurrency}")
+    @GET("/v6/{apikey}/latest/{baseCurrency}")
         Call<ExchangeRatesResponse> getExcengeRates(
 
                 @Path("apikey") String apikey,

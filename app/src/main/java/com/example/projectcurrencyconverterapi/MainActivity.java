@@ -33,9 +33,39 @@ public class MainActivity extends AppCompatActivity {
     private Map<String, Double> taxasDeCambio;
 
     @Override
-    protected void onCreat(Bundle savedInstanceState){
-        super.onCreat(savedInstanceState);
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);//Define o layot da atividade
+
+        //inicializa os componentes da interface
+
+        spinnerMoedaOrigem = findViewById(R.id.spinnerMoedaOrigem);
+        spinnerMoedaDestino = findViewById(R.id.spinnerMoedaDestino);
+        etValor = findViewById(R.id.etValor);
+        btnConverter = findViewById(R.id.btnConverter);
+        tvResultado = findViewById(R.id.tvResultado);
+
+        //configurar spinner com a lista de moedas
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,  android.R.layout.simple_spinner_item, moedas);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerMoedaOrigem.setAdapter(adapter);
+        spinnerMoedaDestino.setAdapter(adapter);
+
+        //carrega as taxas de cambio da API
+        carregarTaxasDeCambio();
+
+        //configura o botão de conversão
+        btnConverter.setOnClickListener(view -> converterMoeda());
+
+    }
+    // metodo para carregar taxas de cambio da API
+
+    private void carregarTaxasDeCambio(){
+
+    }
+    // metodo para converter o valor de uma moeda para outra
+    private void converterMoeda(){
 
     }
 
