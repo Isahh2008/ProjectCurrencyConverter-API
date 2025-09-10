@@ -21,7 +21,9 @@ Com a globalização e o aumento das transações internacionais, torna-se neces
 
 - Oferecer uma interface simples e intuitiva para o usuário.
 # Ferramentas utilizada
+ 
 * Linguagem de programação: JavaScript.
+* ArrayAdapter: Ele é um adaptador, adapters servem de ponte entre a AdapterView (por exemplo ListView, GridView) e os dados necessários para essa visualização.https://developer.android.com/reference/android/widget/ArrayAdapter
 * API utilizada: ExchangeRate-API.
 * Retrofit
 * Ambiente de desenvolvimento: Android Studio
